@@ -1,5 +1,8 @@
 ## 2. `ARCHITECTURE.md`
 
+This project is an **Agentic AI web application** that helps skilled immigrants receive a personalized roadmap for validating and launching their careers in Canada. The system leverages Google Gemini for reasoning and text generation, and Google Custom Search API for real-time source verification and up-to-date links.
+
+
 # Architecture Overview
 ![Agentic‑AI Architecture](images/ARCHITECTURE.png)
 
