@@ -82,13 +82,13 @@ See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for more details.
 
 2. **Install dependencies**
 
-```bash
+
 CopyEdit
 npm install
 
 3. **Create a .env file in the project root and add:**
 
-```bash
+
  env
 CopyEdit
 VITE_GEMINI_API_KEY=your_gemini_api_key
