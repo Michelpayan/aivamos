@@ -1,130 +1,128 @@
-# Agentic AI App Hackathon Template
+# Skilled Immigrant Career Navigator
 
-Welcome! This repository is your starting point for the **Agentic AI App Hackathon**. It includes:
+> **An Agentic AI Web App for Personalized Canadian Immigration & Career Roadmaps**  
+> _Built for the Google x ODSC Hackathon 2025_
 
-- A consistent folder structure  
-- An environment spec (`environment.yml` or `Dockerfile`)  
-- Documentation placeholders to explain your design and demo
+---
+
+## 🚀 Overview
+
+**Skilled Immigrant Career Navigator** empowers newcomers to Canada by generating a _personalized, actionable roadmap_ for validating credentials and integrating into the job market—instantly, in their language, and tailored to their real background.
+
+Our app combines **Google Gemini** for advanced AI reasoning and **Google Custom Search** for real-time, authoritative web resources. The result? Reliable, step-by-step guidance grounded in official sources and delivered through an accessible, agentic user experience.
+
+---
+
+## 🎥 Demo Video
+
+[![Watch the demo on YouTube](https://img.youtube.com/vi/z95z6rIUo_0/0.jpg)](https://www.youtube.com/watch?v=z95z6rIUo_0)  
+**[▶️ Watch the demo video here](https://www.youtube.com/watch?v=z95z6rIUo_0)**
+
+- 00:00 – Introduction & Setup  
+- 00:30 – User Input → Planning step  
+- 01:30 – Tool calls & memory retrieval  
+- 02:30 – Final output & edge-case handling  
+
+---
+
+## ✨ Features
+
+- **Conversational, multilingual interface:** English, Spanish, French, and Portuguese.
+- **Personalized career roadmap:** AI-generated, step-by-step guidance for each user’s real profile.
+- **Real-time verification:** Live Google Custom Search returns up-to-date links from government, regulators, and universities.
+- **Accessible UI:** React + Tailwind CSS for clarity, mobile-friendliness, and ease of use.
+- **No signup required:** Try the demo instantly—no accounts or downloads.
+
+---
+
+## 🧩 How It Works
+
+1. **User completes a profile**  
+   _Name, nationality, profession, years of experience, province, and email._
+
+2. **AI roadmap generation**  
+   _Google Gemini generates a sectioned, tailored roadmap for credential recognition and labor market integration._
+
+3. **Web source enrichment**  
+   _Google Custom Search API finds official, trustworthy links personalized to the user's context._
+
+4. **Results presentation**  
+   _Users receive both their personalized roadmap and clickable links—grounded, explainable, and actionable._
+
+---
+
+## 🏗️ Architecture
+
+See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for diagrams and more details.
+
+---
 
 ## 📋 Submission Checklist
 
-- [ ] All code in `src/` runs without errors  
-- [ ] `ARCHITECTURE.md` contains a clear diagram sketch and explanation  
-- [ ] `EXPLANATION.md` covers planning, tool use, memory, and limitations  
-- [ ] `DEMO.md` links to a 3–5 min video with timestamped highlights  
-
-
-# Skilled Immigrant Career Navigator
-
-> An Agentic AI Web App for Personalized Canadian Immigration & Career Roadmaps  
-> Built for the Google x ODSC Hackathon 2025
+- [x] All code in `src/` runs without errors
+- [x] `ARCHITECTURE.md` contains a clear diagram and explanation
+- [x] `EXPLANATION.md` covers planning, tool use, memory, and limitations
+- [x] `DEMO.md` links to a 3–5 min video with timestamped highlights
 
 ---
 
-## Overview
+## ⚡ Getting Started
 
-This project empowers skilled immigrants to Canada with a **personalized, actionable roadmap** for validating their credentials and integrating into the Canadian job market.  
-The app combines Google Gemini (2.5 Pro) for advanced reasoning and Google Custom Search for real-time authoritative resources, delivering guidance you can trust.
-
----
-
-## Features
-
-- **Conversational, multilingual form**: Supports English, Spanish, French, and Portuguese.
-- **Personalized career roadmap**: AI-generated, step-by-step guidance tailored to each user’s profile.
-- **Real-time verification**: Live web search returns official and up-to-date sources (government, regulators, universities).
-- **Accessible UI**: Built with React and Tailwind CSS for clarity, mobile-friendliness, and ease of use.
-- **No signup required**: Instant demo; no accounts or downloads.
-
----
-
-## How It Works
-
-1. **User completes a profile**  
-   Name, nationality, profession, experience, province, and email.
-2. **AI roadmap generation**  
-   Google Gemini creates a tailored, sectioned career validation and integration plan.
-3. **Web source enrichment**  
-   Google Custom Search API fetches the most relevant, trustworthy links for the user's context.
-4. **Results presentation**  
-   The user receives both their personalized roadmap and live, clickable links—grounded, explainable, and actionable.
-
----
-
-## Architecture
-
-![Architecture Diagram](./A_flowchart_diagram_in_the_image_illustrates_an_ag.png)
-
-- **Frontend**: React + TypeScript + Tailwind
-- **AI Reasoning**: Google Gemini 2.5 Pro API
-- **Web Search**: Google Custom Search API (CSE)
-- **Session Memory**: All data is held in session state (no backend)
-
-See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for more details.
-
----
-
-## Getting Started
-
-### **Prerequisites**
+### Prerequisites
 
 - Node.js 18+
 - NPM
 - Google Gemini API key
 - Google Custom Search API key & CX
 
-### **Setup**
+### Setup
 
 1. **Clone this repository**
-
-   ```bash
-   git clone https://github.com/Michelpayan/aivamos.git
+    ```bash
+    git clone https://github.com/Michelpayan/aivamos.git
+    ```
 
 2. **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-
-CopyEdit
-npm install
-
-3. **Create a .env file in the project root and add:**
-
-
- env
-CopyEdit
-VITE_GEMINI_API_KEY=your_gemini_api_key
-VITE_GOOGLE_CSE_API_KEY=your_google_cse_api_key
-VITE_GOOGLE_CSE_CX=your_google_cse_cx
+3. **Create a `.env` file in the project root and add:**
+    ```
+    VITE_GEMINI_API_KEY=your_gemini_api_key
+    VITE_GOOGLE_CSE_API_KEY=your_google_cse_api_key
+    VITE_GOOGLE_CSE_CX=your_google_cse_cx
+    ```
 
 4. **Start the development server**
+    ```bash
+    npm run dev
+    ```
 
- bash
-CopyEdit
-npm run dev
+5. **Open your browser at** `http://localhost:5173` _(or as indicated in the terminal)_.
 
-5. **Open your browser at http://localhost:5173 (or as indicated in terminal).**
+---
 
+## 🤝 Contributing
 
-Contributing
-Pull requests are welcome!
- If you wish to contribute or adapt this project for other migration scenarios or countries, open an issue or start a discussion.
+Pull requests are welcome!  
+Want to adapt this project for other migration scenarios or countries? Open an issue or start a discussion.
 
-License
-MIT
+---
 
-Credits
-Google x ODSC Hackathon Team
+## 📝 License
 
+[MIT](./LICENSE)
 
-Google Gemini
+---
 
+## 🙏 Credits
 
-Google Programmable Search Engine
+- Google x ODSC Hackathon Team
+- Google Gemini
+- Google Programmable Search Engine
+- React, Tailwind CSS, Typescript
 
+---
 
-React, Tailwind CSS, Typescript
-
-
-
-Empowering newcomers. Grounding AI advice with real-world sources.
-
-
+_Empowering newcomers. Grounding AI advice with real-world sources._
