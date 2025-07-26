@@ -78,8 +78,8 @@ See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for more details.
 1. **Clone this repository**
 
    ```bash
-   git clone https://github.com/yourusername/skilled-immigrant-path.git
-   cd skilled-immigrant-path
+   git clone https://github.com/Michelpayan/aivamos.git
+
 
 2. **Install dependencies**
 
