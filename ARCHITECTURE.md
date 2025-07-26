@@ -5,3 +5,18 @@
 
 ## Components:
 
+
+### 1. **User Interface**
+ **Browser (React Front)** | Vite + React + Tailwind (shadcn) | Hosts the interactive wizard; runs fully client‑side. |
+
+### 2. **Agent Core**
+| Part | Implementation | Role |
+|------|----------------|------|
+| **Planner** | Prompt‑engineering inside `route.ts` | Builds a structured prompt (profile + JSON schema), instructs Gemini. |
+| **Executor** | Next.js API Route (`app/api/generate-roadmap/route.ts`) | Calls Gemini **and** Google CSE, merges results, returns JSON. |
+
+### 3. **Tools / APIs**
+| Tool | Why |
+|------|-----|
+| **Gemini API (2.5 / 2.0‑flash)** | Generates the personalized roadmap in strict JSON. |
+| **Google Custom Search API (CSE)** | Provides fresh web snippets / links for citations. |
