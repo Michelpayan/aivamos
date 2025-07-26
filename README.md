@@ -79,7 +79,6 @@ See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for more details.
 
    ```bash
    git clone https://github.com/Michelpayan/aivamos.git
- ```
 
 2. **Install dependencies**
 
@@ -95,7 +94,7 @@ CopyEdit
 VITE_GEMINI_API_KEY=your_gemini_api_key
 VITE_GOOGLE_CSE_API_KEY=your_google_cse_api_key
 VITE_GOOGLE_CSE_CX=your_google_cse_cx
- ```
+
 4. **Start the development server**
 
  bash
